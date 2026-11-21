@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OSINTX · Plataforma de Inteligencia</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- Fondo con gradientes -->
+<div class="bg-glow"></div>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="brand">
+      <div class="logo">OSINT<span>X</span></div>
+      <div class="tagline">Inteligencia de fuentes abiertas</div>
+    </div>
+    <div id="authArea"></div>
+  </header>
+
+  <!-- STATUS APIs -->
+  <div class="status-bar">
+    <span class="status-label">FUENTES</span>
+    <span id="status">cargando…</span>
+    <button class="btn-refresh" onclick="loadHealth()" title="Refrescar">⟳</button>
+  </div>
+
+  <!-- TABS -->
+  <nav class="tabs" id="tabs"></nav>
+
+  <!-- PANEL DE BÚSQUEDA -->
+  <section class="panel search-panel">
+    <div id="singleMode">
+      <div class="search-box">
+        <span class="search-icon">⌕</span>
+        <input id="target" placeholder="Introduce un email, usuario, dominio o IP..." autocomplete="off">
+        <button onclick="run()" class="btn-primary">Analizar</button>
+      </div>
+    </div>
+
+    <div id="batchMode" style="display:none">
+      <textarea id="batchInput" rows="6" placeholder="Un valor por línea (máx 50)"></textarea>
+      <div class="row" style="margin-top:12px">
+        <select id="batchType">
+          <option value="email">Emails</option>
+          <option value="username">Usernames</option>
+        </select>
+        <button onclick="runBatch()" class="btn-primary">Procesar lote</button>
+      </div>
+    </div>
+
+    <div id="chatMode" style="display:none">
+      <div class="chat-box" id="chatBox"></div>
+      <div class="row">
+        <input id="chatInput" placeholder="Pregunta a la IA..." onkeydown="if(event.key==='Enter')sendChat()">
+        <button onclick="sendChat()" class="btn-primary">Enviar</button>
+      </div>
+    </div>
+
+    <div id="historyMode" style="display:none">
+      <div id="historyList"><em class="muted">Cargando…</em></div>
+    </div>
+
+    <p class="hint" id="hint"></p>
+  </section>
+
+  <!-- PANEL VERIFICAR CONTRASEÑA -->
+  <section class="panel password-panel">
+    <div class="panel-head">
+      <span class="dot dot-cyan"></span>
+      <h3>Verificar contraseña</h3>
+      <span class="badge-mini">k-anonymity · sin API key</span>
+    </div>
+    <div class="row" style="margin-top:10px">
+      <input id="pwdInput" type="password" placeholder="Escribe una contraseña para comprobar si fue filtrada">
+      <button onclick="checkPassword()" class="btn-secondary">Verificar</button>
+    </div>
+    <div id="pwdResult" style="margin-top:12px"></div>
+  </section>
+
+  <!-- PANEL RESULTADOS -->
+  <section class="panel results-panel">
+    <div class="panel-head">
+      <span class="dot dot-purple"></span>
+      <h3>Resultados</h3>
+      <span id="timer" class="timer"></span>
+      <div id="exportRow" style="display:none;margin-left:auto">
+        <button class="btn-ghost" onclick="exportAs('json')">JSON</button>
+        <button class="btn-ghost" onclick="exportAs('csv')">CSV</button>
+        <button class="btn-ghost" onclick="exportAs('pdf')">PDF</button>
+      </div>
+    </div>
+    <div id="results" class="results-body">
+      <em class="muted">Sin búsquedas aún</em>
+    </div>
+    <div id="aiRow" style="display:none;margin-top:18px">
+      <button onclick="analyzeAI()" class="btn-ai">
+        <span>✦</span> Analizar con IA
+      </button>
+    </div>
+    <div id="aiResult" class="ai-result"></div>
+  </section>
+
+  <footer class="footer">
+    OSINTX · Solo datos públicos · Uso ético y legal
+  </footer>
+</div>
+
+<!-- MODAL AUTH -->
+<div class="modal" id="authModal">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h3 id="authTitle">Iniciar sesión</h3>
+      <button class="modal-close" onclick="closeAuth()">✕</button>
+    </div>
+    <input id="authEmail" type="email" placeholder="email@ejemplo.com">
+    <input id="authPass" type="password" placeholder="contraseña (mín 8 caracteres)">
+    <button onclick="submitAuth()" id="authBtn" class="btn-primary" style="width:100%">Entrar</button>
+    <div class="error" id="authError"></div>
+    <div class="toggle" onclick="toggleAuth()" id="authToggle">¿No tienes cuenta? Regístrate</div>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
