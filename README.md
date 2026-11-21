@@ -1,94 +1,94 @@
 <div align="center">
 
-# 🔍 OSINTX
+# 🔍 OsintX
 
-### Plataforma OSINT con IA para análisis de datos públicos
+### AI-Powered OSINT Platform for Public Data Analysis
 
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)]()
 
-[![GitHub stars](https://img.shields.io/github/stars/splxcy/osintx?style=social)](https://github.com/splxcy/osintx/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/splxcy/osintx?style=social)](https://github.com/splxcy/osintx/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/splxcy/osintx)](https://github.com/splxcy/osintx/issues)
+[![GitHub stars](https://img.shields.io/github/stars/splxcy/OsintX?style=social)](https://github.com/splxcy/OsintX/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/splxcy/OsintX?style=social)](https://github.com/splxcy/OsintX/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/splxcy/OsintX)](https://github.com/splxcy/OsintX/issues)
 
-**Análisis de filtraciones · Verificación de contraseñas · Usernames · Dominios · GitHub · IA**
+**Breach & Stealer Log Lookup · Password Check · Usernames · Domains · GitHub · AI Reports**
 
-[🌐 Demo en vivo](https://osintx-cx0g.onrender.com/) · [Características](#-características) · [Capturas](#-capturas) · [Instalación](#-instalación) · [API](#-api-rest) · [Contribuir](#-contribuir)
+[🌐 Live Demo](https://osintx-cx0g.onrender.com/) · [Features](#-features) · [Screenshots](#-screenshots) · [Installation](#-installation) · [API](#-rest-api) · [🇪🇸 Español](README.es.md)
 
 </div>
 
 ---
 
-## 🌐 Pruébalo online
+## 🌐 Try It Live
 
 <div align="center">
 
 ### 🚀 **[https://osintx-cx0g.onrender.com/](https://osintx-cx0g.onrender.com/)**
 
-*Demo pública en Render — plan gratuito, puede tardar ~30 s en despertar*
+*Public Render free-tier demo — may take ~30s to wake up on cold start*
 
 </div>
 
-> 💡 **¿Quieres tu propia instancia local o en servidor privado?** Sigue el [tutorial de instalación](#-instalación).
+> 💡 **Want unlimited access or full privacy?** Run your own local or self-hosted instance using the [installation guide](#-installation).
 
 ---
 
-## 💡 ¿Qué es OSINTX?
+## 💡 What is OsintX?
 
-**OSINTX** es una plataforma de inteligencia de fuentes abiertas (OSINT) que centraliza en una sola interfaz web el análisis de datos públicos sobre emails, usernames, dominios y perfiles. Combina múltiples APIs gratuitas con análisis asistido por IA.
+**OsintX** is an open-source Open-Source Intelligence (OSINT) web platform that unifies public data investigation across emails, usernames, domains, and profiles in a single dashboard, combining free APIs with AI-assisted analysis.
 
-**Es 100% código abierto bajo licencia MIT.** Puedes clonarlo, modificarlo, mejorarlo y desplegarlo donde quieras.
+**100% open source under the MIT License.** Clone it, customize it, self-host it, and extend it with new sources.
 
 ---
 
-## 📸 Capturas
+## 📸 Screenshots
 
 <div align="center">
 
-### Interfaz principal
+### Main Dashboard
 
 ![Dashboard](docs/screenshots/dashboard.png)
 
-### Análisis de filtraciones
+### Breach & Stealer Log Lookup
 
-![Filtraciones](docs/screenshots/breaches.png)
+![Breaches](docs/screenshots/breaches.png)
 
-### Análisis asistido por IA
+### AI-Assisted Analysis
 
-![IA](docs/screenshots/ai.png)
+![AI](docs/screenshots/ai.png)
 
 </div>
 
 ---
 
-## ✨ Características
+## ✨ Features
 
 <table>
 <tr>
 <td width="50%">
 
-### 🔓 Filtraciones de malware
-Verifica si un email aparece en **stealer logs** de malware (RedLine, Raccoon, etc.) vía **Hudson Rock**.
+### 🔓 Stealer Log & Breach Lookup
+Check if an email appears in malware **stealer logs** (RedLine, Raccoon, etc.) via **Hudson Rock**.
 
-### 🔐 Verificador de contraseñas
-Comprueba si una contraseña fue filtrada usando **k-anonymity** (Pwned Passwords). Tu contraseña nunca se envía completa.
+### 🔐 Password Exposure Check
+Verify whether a password has been leaked using **k-anonymity** (Pwned Passwords). Your password is never sent in full.
 
-### 👤 Búsqueda de usernames
-Rastrea un username en **12+ plataformas**: GitHub, Reddit, Twitter, Instagram, TikTok, Twitch, Steam y más.
+### 👤 Username Enumeration
+Search a username across **12+ platforms**: GitHub, Reddit, Twitter/X, Instagram, TikTok, Twitch, Steam, and more.
 
 </td>
 <td width="50%">
 
-### 🐙 Análisis de GitHub
-Perfil completo, repositorios, actividad reciente, lenguajes y estadísticas.
+### 🐙 GitHub Intelligence
+Inspect user profiles, repositories, recent activity, languages, and stats.
 
-### 🌐 Inteligencia de dominios
-Registros DNS (A, MX, TXT, NS), subdominios vía **crt.sh** y metadatos.
+### 🌐 Domain Intelligence
+Query DNS records (`A`, `MX`, `TXT`, `NS`), subdomains via **crt.sh**, and domain metadata.
 
-### 🤖 Análisis con IA
-Informes automáticos con **Groq, OpenAI, OpenRouter u Ollama**. Compatible con cualquier endpoint estilo OpenAI.
+### 🤖 AI Analysis
+Generate structured summaries with **Groq, OpenAI, OpenRouter, or Ollama** (any OpenAI-compatible endpoint).
 
 </td>
 </tr>
@@ -96,27 +96,27 @@ Informes automáticos con **Groq, OpenAI, OpenRouter u Ollama**. Compatible con 
 
 ---
 
-## 📋 Requisitos previos
+## 📋 Prerequisites
 
-| Herramienta | Versión | Comando de verificación | Enlace de descarga |
+| Tool | Version | Check Command | Download |
 | :--- | :--- | :--- | :--- |
 | **Python** | 3.11+ | `python --version` | [python.org](https://www.python.org/downloads/) |
 | **Git** | 2.30+ | `git --version` | [git-scm.com](https://git-scm.com/downloads) |
 
-> ⚠️ **Al instalar Python en Windows**, marca siempre la casilla **"Add Python to PATH"**.
+> ⚠️ **On Windows**, check **"Add Python to PATH"** during installation.
 
 ---
 
-## 🚀 Instalación
+## 🚀 Installation
 
-### 1. Clonar el repositorio
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/splxcy/osintx.git
-cd osintx/backend
+git clone [https://github.com/splxcy/OsintX.git](https://github.com/splxcy/OsintX.git)
+cd OsintX/backend
 ```
 
-### 2. Crear y activar entorno virtual
+### 2. Create and activate a virtual environment
 
 **Windows (PowerShell):**
 
@@ -132,15 +132,15 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3. Instalar dependencias
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configurar variables de entorno (`.env`)
+### 4. Configure environment variables (`.env`)
 
-Copiar la plantilla de ejemplo:
+Copy the example file:
 
 ```bash
 # Windows
@@ -150,7 +150,7 @@ copy .env.example .env
 cp .env.example .env
 ```
 
-Generar `SECRET_KEY` requerida:
+Generate a `SECRET_KEY`:
 
 ```powershell
 # Windows PowerShell
@@ -162,58 +162,58 @@ $bytes = New-Object byte[] 32; [System.Security.Cryptography.RandomNumberGenerat
 openssl rand -hex 32
 ```
 
-Edita tu archivo `.env` con los siguientes valores:
+Edit `.env`:
 
 ```env
-SECRET_KEY=pega_aqui_tu_clave_generada
-AI_API_KEY=gsk_tu_key_aqui
-AI_BASE_URL=https://api.groq.com/openai/v1
+SECRET_KEY=paste_your_generated_key_here
+AI_API_KEY=gsk_your_key_here
+AI_BASE_URL=[https://api.groq.com/openai/v1](https://api.groq.com/openai/v1)
 AI_MODEL=openai/gpt-oss-120b
-GITHUB_TOKEN=ghp_tu_token_opcional
+GITHUB_TOKEN=ghp_your_optional_token_here
 ```
 
-### 5. Iniciar la aplicación
+### 5. Start the server
 
 ```bash
 uvicorn main:app --reload
 ```
 
-Abre tu navegador en: `http://localhost:8000`
+Open your browser at `http://localhost:8000`.
 
 ---
 
-## 🔑 Configuración de API Keys
+## 🔑 API Keys Guide
 
-| Servicio | Requiere Registro | Coste | Cómo obtenerla |
+| Service | Sign-up Required | Cost | How to Get It |
 | :--- | :---: | :---: | :--- |
-| **Hudson Rock** | ❌ No | 🟢 Gratis | Funciona por defecto sin API Key |
-| **Pwned Passwords** | ❌ No | 🟢 Gratis | Utiliza *k-anonymity* públicamente |
-| **Groq (IA)** | ✅ Sí | 🟢 Gratis | Registro en [console.groq.com](https://console.groq.com/keys) |
-| **GitHub Token** | ✅ Sí | 🟢 Gratis | Crear token clásico en [github.com/settings/tokens](https://github.com/settings/tokens) |
+| **Hudson Rock** | ❌ No | 🟢 Free | Works out of the box with no key |
+| **Pwned Passwords** | ❌ No | 🟢 Free | Uses public *k-anonymity* API |
+| **Groq (AI)** | ✅ Yes | 🟢 Free | Create a key at [console.groq.com](https://console.groq.com/keys) |
+| **GitHub Token** | ✅ Yes | 🟢 Free | Classic token at [github.com/settings/tokens](https://github.com/settings/tokens) |
 
 ---
 
-## 🔌 API REST
+## 🔌 REST API
 
-Documentación OpenAPI interactiva disponible en `http://localhost:8000/docs`.
+Interactive OpenAPI docs available at `http://localhost:8000/docs`.
 
 ```bash
-# Búsqueda de filtraciones por email
+# Breach / stealer log lookup
 curl -X POST http://localhost:8000/api/breaches \
   -H "Content-Type: application/json" \
   -d '{"email": "test@example.com"}'
 
-# Verificación de contraseñas
+# Password breach check
 curl -X POST http://localhost:8000/api/breaches/password \
   -H "Content-Type: application/json" \
   -d '{"password": "123456"}'
 
-# Búsqueda de username
+# Username search
 curl -X POST http://localhost:8000/api/username \
   -H "Content-Type: application/json" \
   -d '{"username": "torvalds"}'
 
-# Análisis DNS de dominio
+# Domain DNS & recon
 curl -X POST http://localhost:8000/api/domain \
   -H "Content-Type: application/json" \
   -d '{"domain": "github.com"}'
@@ -221,9 +221,9 @@ curl -X POST http://localhost:8000/api/domain \
 
 ---
 
-## 🛠️ Stack tecnológico
+## 🛠️ Tech Stack
 
-| Backend | Frontend | IA / Modelos | Almacenamiento |
+| Backend | Frontend | AI / LLMs | Storage |
 | :---: | :---: | :---: | :---: |
 | FastAPI | HTML5 | Groq API | SQLite |
 | Uvicorn | CSS3 | OpenAI / Ollama | PostgreSQL |
@@ -232,46 +232,47 @@ curl -X POST http://localhost:8000/api/domain \
 
 ---
 
-## 📁 Estructura del proyecto
+## 📁 Project Structure
 
 ```text
-osintx/
+OsintX/
 ├── backend/
-│   ├── main.py              # Punto de entrada FastAPI
-│   ├── config.py            # Configuración y variables .env
+│   ├── main.py              # FastAPI entry point
+│   ├── config.py            # Settings & .env config
 │   ├── database.py          # SQLAlchemy ORM
-│   ├── auth.py              # Autenticación JWT y hashing
+│   ├── auth.py              # JWT auth & password hashing
 │   ├── routers/
-│   │   ├── auth_router.py   # Endpoints de Login / Registro
-│   │   ├── breaches.py      # Integraciones Stealer logs & HIBP
-│   │   ├── username.py      # Búsqueda en 12+ redes sociales
-│   │   ├── github.py        # Módulo GitHub API
-│   │   ├── domain.py        # DNS & subdominios (crt.sh)
-│   │   └── ai.py            # Generación de informes con LLM
-│   ├── static/              # Archivos web estáticos
-│   ├── requirements.txt     # Dependencias del backend
-│   └── .env.example         # Plantilla de variables de entorno
+│   │   ├── auth_router.py   # Register / login routes
+│   │   ├── breaches.py      # Stealer logs & password checks
+│   │   ├── username.py      # 12+ platform username lookup
+│   │   ├── github.py        # GitHub profile & repo analysis
+│   │   ├── domain.py        # DNS & crt.sh subdomains
+│   │   └── ai.py            # LLM report generation
+│   ├── static/              # Frontend assets
+│   ├── requirements.txt     # Python dependencies
+│   └── .env.example         # Environment template
 ├── docs/
-│   └── screenshots/         # Capturas para el README
+│   └── screenshots/         # README screenshots
 ├── README.md
+├── README.es.md
 └── LICENSE
 ```
 
 ---
 
-## 🔧 Solución de problemas
+## 🔧 Troubleshooting
 
-| Problema | Causa probable | Solución |
+| Issue | Likely Cause | Fix |
 | :--- | :--- | :--- |
-| `python no se reconoce...` | Python no está agregado al PATH | Reinstalar marcando **"Add Python to PATH"** |
-| `no se puede cargar Activate.ps1` | Política de ejecución de PowerShell | Ejecutar: `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser` |
-| `ModuleNotFoundError: fastapi` | Entorno virtual desactivado | Ejecutar: `.\venv\Scripts\activate` |
-| `error building wheel for pydantic-core` | Versión de Python incompatible | Usar Python 3.11 o 3.12 |
-| `[Errno 10048] Address in use` | Puerto 8000 ocupado | Arrancar con `--port 8001` |
+| `python is not recognized` | Python not in `PATH` | Reinstall checking **"Add Python to PATH"** |
+| `cannot load Activate.ps1` | PowerShell execution policy | Run `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser` |
+| `ModuleNotFoundError: fastapi` | Virtual environment inactive | Run `.\venv\Scripts\activate` |
+| `error building wheel for pydantic-core` | Unsupported Python version | Use Python 3.11 or 3.12 |
+| `[Errno 10048] Address in use` | Port 8000 already bound | Start with `--port 8001` |
 
 ---
 
-## 🐳 Docker (opcional)
+## 🐳 Docker (Optional)
 
 ```bash
 docker build -t osintx backend/
@@ -280,39 +281,39 @@ docker run -p 8000:8000 --env-file backend/.env osintx
 
 ---
 
-## 🤝 Contribuir
+## 🤝 Contributing
 
-¡Las contribuciones son bienvenidas!
+Contributions are welcome!
 
-1. Realiza un **Fork** de este proyecto.
-2. Crea tu rama de función: `git checkout -b feature/nueva-fuente`
-3. Guarda los cambios: `git commit -m 'feat: añadir integración con Shodan'`
-4. Envía la rama: `git push origin feature/nueva-fuente`
-5. Abre un **Pull Request**.
-
----
-
-## ⚖️ Uso ético y legal
-
-- 🟢 **Permitido:** Auditorías de seguridad autorizadas, verificación personal, investigaciones periodísticas con consentimiento.
-- 🔴 **Prohibido:** Acoso, doxing, vigilancia no autorizada o violación de leyes de privacidad (GDPR, CCPA).
-
-> **⚠️ El usuario es el único responsable del uso que le dé a esta plataforma.**
+1. **Fork** the repository
+2. Create a branch: `git checkout -b feature/shodan-integration`
+3. Commit your changes: `git commit -m 'feat: add Shodan integration'`
+4. Push: `git push origin feature/shodan-integration`
+5. Open a **Pull Request**
 
 ---
 
-## 📄 Licencia
+## ⚖️ Ethical & Legal Use
 
-Este proyecto está bajo la **Licencia MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+- 🟢 **Allowed:** Authorized security assessments, checking your own exposure, consented research or journalism.
+- 🔴 **Prohibited:** Harassment, doxing, unauthorized surveillance, or violating privacy laws (GDPR, CCPA).
+
+> **⚠️ Users are solely responsible for how they use this tool.**
+
+---
+
+## 📄 License
+
+Licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 ---
 
 <div align="center">
 
-### ⭐ Si OSINTX te es de utilidad, ¡apóyanos con una estrella! ⭐
+### ⭐ If OsintX helps your workflow, give it a star! ⭐
 
-**Desarrollado con ❤️ por [splxcy](https://github.com/splxcy)**
+**Built with ❤️ by [splxcy](https://github.com/splxcy)**
 
-[🌐 Demo](https://osintx-cx0g.onrender.com/) · [🐛 Reportar Bug / Issue](https://github.com/splxcy/osintx/issues)
+[🌐 Live Demo](https://osintx-cx0g.onrender.com/) · [🐛 Report an Issue](https://github.com/splxcy/OsintX/issues)
 
 </div>
